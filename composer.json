@@ -1,14 +1,13 @@
 {
     "name": "sadekd/nova-opening-hours-field",
-    "description": "Laravel Nova custom field for Spatie Opening Hours",
+    "description": "A Laravel Nova field.",
     "keywords": [
         "laravel",
-        "nova",
-        "opening hours"
+        "nova"
     ],
     "license": "MIT",
     "require": {
-        "php": "^7.2"
+        "php": ">=7.1.0"
     },
     "autoload": {
         "psr-4": {
@@ -18,8 +17,13 @@
     "extra": {
         "laravel": {
             "providers": [
-                "SadekD\\NovaOpeningHoursField\\FieldServiceProvider"
+                "Sadekd\\NovaOpeningHoursField\\FieldServiceProvider"
             ]
         }
-    }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

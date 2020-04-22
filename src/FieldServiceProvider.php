@@ -1,6 +1,6 @@
 <?php
 
-namespace SadekD\NovaOpeningHoursField;
+namespace Sadekd\NovaOpeningHoursField;
 
 use Laravel\Nova\Nova;
 use Laravel\Nova\Events\ServingNova;
@@ -13,7 +13,6 @@ class FieldServiceProvider extends ServiceProvider
         Nova::serving(function (ServingNova $event) {
             Nova::script('nova-opening-hours-field', __DIR__ . '/../dist/js/field.js');
             Nova::style('nova-opening-hours-field', __DIR__ . '/../dist/css/field.css');
-            Nova::translations(__DIR__ . '/../resources/lang/en.json');
         });
     }
 
